@@ -2,10 +2,15 @@ from flask import Flask, render_template
 import os
 
 app = Flask(__name__)
+TEMPLATES_AUTO_RELOAD = True
 
 @app.route("/")
 def index():
 	return render_template('index.html')
+
+@app.route("/inicial")
+def inicial():
+	return render_template('inicial.html')
 
 if __name__ == '__main__':
 	port = int(os.environ.get("PORT",5000))

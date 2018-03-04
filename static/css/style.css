@@ -1,19 +1,49 @@
-html, body{
-  height: 100%;
-  margin:0px;
-  padding: 0px;
-}
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+/*OPCOES PARA O PARTICLES FICAR NO BACKGROUND*/
 #particles-js{
-  width: 100%;
-  height: 100%;
   background: #111111;
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  z-index:0;
 }
 
+/*ADICIONANDO O CONTEUDO COMO RELATIVE PARA APARECER POR CIMA DO PARTICLES*/
+.overlay {
+  position: relative;
+}
+
+/*CUSTOMIZACAO DO SCROLL BAR(ALTERACAO NO TAMANHO)*/
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
 }
 
+/*CUSTOMIZACAO DO SCROLL BAR(TROCA DE COR)*/
 ::-webkit-scrollbar-thumb {
     background: rgba(0,0,0,0.4);
-    border-radius: 5px;
+}
+
+.jumbotron{
+  padding: 1rem 2rem;
+  background-color: rgba(232, 235, 239, 0.5);
+}
+.jumbotron p{
+  padding-top: 10px;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+}
+.space{
+  margin-top: 60px;
+}
+
+.nav-link{
+  border-top: 3px solid transparent;
+}
+
+.nav-link:hover{
+  border-top: 3px solid white;
 }
