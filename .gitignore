@@ -1,2 +1,6 @@
 *.pyc
 blog
+bin/
+include/
+lib/
+*.json
