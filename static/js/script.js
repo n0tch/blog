@@ -1,3 +1,19 @@
+$(function(){
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop(), tamConteudo = $('article').height(), tamWin = $(window).height();
+    var totalScroll = (winTop/(tamConteudo-tamWin))*100;
+    $('.bottom-progressbar').css('width', totalScroll+"%");
+  });
+});
+/*
+$('window').load(function(){
+  $(window).scroll(function(){
+    var winTop = $(window).scrollTop(), tamConteudo = $('article').height(), tamWin = $(window).height();
+    var totalScroll = (winTop/(tamConteudo-tamWin))*100;
+    $('.bottom-progressbar').css('width', totalScroll+"%");
+  });
+});
+*/
 particlesJS("particles-js", {
   "particles": {
     "number": {
